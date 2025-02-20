@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Temperature Converter</h5>
+            <form id="tempForm">
+              <div class="mb-3">
+                <label for="degree" class="form-label">Enter Temperature</label>
+                <input type="number" id="degree" class="form-control" placeholder="Enter value" required>
+              </div>
+              <div class="mb-3">
+                <label for="unit" class="form-label">Convert From</label>
+                <select id="unit" class="form-select">
+                  <option value="celsius">Celsius (°C)</option>
+                  <option value="fahrenheit">Fahrenheit (°F)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="convertTo" class="form-label">Convert To</label>
+                <select id="convertTo" class="form-select">
+                  <option value="fahrenheit">Fahrenheit (°F)</option>
+                  <option value="celsius">Celsius (°C)</option>
+                </select>
+              </div>
+              <button type="button" id="convertBtn" class="btn btn-primary w-100">Convert</button>
+            </form>
+            <h3 class="text-center mt-4" id="result">Result: -</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('convertBtn').addEventListener('click', function () {
+      const degree = parseFloat(document.getElementById('degree').value);
+      const fromUnit = document.getElementById('unit').value;
+      const toUnit = document.getElementById('convertTo').value;
+      let result = 0;
+
+      if (fromUnit === toUnit) {
+        result = degree; // No conversion needed
+      } else if (fromUnit === 'celsius' && toUnit === 'fahrenheit') {
+        result = (degree * 9/5) + 32; // Celsius to Fahrenheit
+      } else if (fromUnit === 'fahrenheit' && toUnit === 'celsius') {
+        result = (degree - 32) * 5/9; // Fahrenheit to Celsius
+      }
+
+      document.getElementById('result').textContent = `Result: ${result.toFixed(2)} °${toUnit === 'celsius' ? 'C' : 'F'}`;
+    });
+  </script>
+</body>
+</html>

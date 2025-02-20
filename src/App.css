@@ -1,115 +1,186 @@
-.headerz{
+.headerz {
   text-align: center;
   margin-top: 100px;
- 
+
 }
-.header{
+
+.header {
   width: 100%;
   height: 120px;
   padding-top: 60px;
 }
-.all{
+
+.all {
   width: 100%;
 }
-.ariv{
-	position: relative;
-	color: black;
-	cursor: pointer;
-	line-height: -0.5;
-	text-decoration: none;
+
+.ariv {
+  position: relative;
+  color: black;
+  cursor: pointer;
+  line-height: -0.5;
+  text-decoration: none;
   margin: 15px;
 }
-.ariv:after{
-	display: block;
-	position: absolute;
-	left: 0;
-	width: 0;
-	height: 1px;
-	background-color: black;
-	content: "";
+
+.ariv:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  content: "";
 }
+
 .ariv:hover:after,
-.ariv:focus:after{
-	width: 100%;
+.ariv:focus:after {
+  width: 100%;
 }
-.abo{
-	position: relative;
-	color: black;
-	cursor: pointer;
-	line-height: -0.5;
-	text-decoration: none;
+
+.abo {
+  position: relative;
+  color: black;
+  cursor: pointer;
+  line-height: -0.5;
+  text-decoration: none;
   margin: 15px;
 }
-.abo:after{
-	display: block;
-	position: absolute;
-	left: 0;
-	width: 0;
-	height: 1px;
-	background-color: black;
-	content: "";
+
+.abo:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  content: "";
 }
+
 .abo:hover:after,
-.abo:focus:after{
-	width: 100%;
+.abo:focus:after {
+  width: 100%;
 }
-.hbutton{
+
+.hbutton {
   background-color: white;
   border: none;
 }
-.bodyg{
+
+.bodyg {
   padding-left: 20px;
   background-color: gray;
 }
-.body{
+
+.body {
   padding: 50px;
 }
-.bodygo{
+
+.bodygo {
   margin: 50px;
   margin-top: 85px;
   margin-bottom: 85px;
   color: white;
   font-size: bold;
 }
-.textb{
+
+.textb {
   font-style: oblique;
-  
+
 }
-.bodytf{
+
+.bodytf {
   border: 1px solid grey;
   border-radius: 8px;
   margin: 35px;
   margin-left: 50px;
   padding-top: 50px;
 }
-.bodyts{
+
+.bodyts {
   border: 1px solid grey;
   border-radius: 8px;
   margin: 35px;
   margin-left: 85px;
   padding-top: 50px;
 }
-.imgf{
+
+.imgf {
   width: 100%;
 }
-.imgs{
+
+.imgs {
   width: 100%;
   margin-top: 50px;
 }
-.footf{
+
+.footf {
   text-align: center;
   background-color: rgba(199, 198, 198, 0.815);
   padding-top: 40px;
 }
-.about{
+
+.about {
   margin-left: 50px;
 }
-.ha{
+
+.ha {
   color: black;
   text-decoration: none;
 }
-.asdf{
+
+.asdf {
   margin-left: 50px;
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+.box {
+  border-radius: 10px;
+  border: 4px solid #1f8e94;
+  border-radius: 20px;
+  width: 100%;
+  margin-left: 15%;
+  color: #1f8e94;
+  padding: 40px;
+}
+
+.form-select {
+  width: 50px;
+}
+
+.header {
+  margin-bottom: 10px;
+  padding-top: 0px;
+}
+
+
+.myButton {
+  background-color: #1f8e94;
+  border-radius: 28px;
+  border: 1px solid #1f8e94;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #187277;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.myButton:hover {
+  background-color: #1f8e94;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+
+
+}
+.result{
+  margin-left: 650px;
 }
