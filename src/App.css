@@ -1,0 +1,115 @@
+.headerz{
+  text-align: center;
+  margin-top: 100px;
+ 
+}
+.header{
+  width: 100%;
+  height: 120px;
+  padding-top: 60px;
+}
+.all{
+  width: 100%;
+}
+.ariv{
+	position: relative;
+	color: black;
+	cursor: pointer;
+	line-height: -0.5;
+	text-decoration: none;
+  margin: 15px;
+}
+.ariv:after{
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: black;
+	content: "";
+}
+.ariv:hover:after,
+.ariv:focus:after{
+	width: 100%;
+}
+.abo{
+	position: relative;
+	color: black;
+	cursor: pointer;
+	line-height: -0.5;
+	text-decoration: none;
+  margin: 15px;
+}
+.abo:after{
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: black;
+	content: "";
+}
+.abo:hover:after,
+.abo:focus:after{
+	width: 100%;
+}
+.hbutton{
+  background-color: white;
+  border: none;
+}
+.bodyg{
+  padding-left: 20px;
+  background-color: gray;
+}
+.body{
+  padding: 50px;
+}
+.bodygo{
+  margin: 50px;
+  margin-top: 85px;
+  margin-bottom: 85px;
+  color: white;
+  font-size: bold;
+}
+.textb{
+  font-style: oblique;
+  
+}
+.bodytf{
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin: 35px;
+  margin-left: 50px;
+  padding-top: 50px;
+}
+.bodyts{
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin: 35px;
+  margin-left: 85px;
+  padding-top: 50px;
+}
+.imgf{
+  width: 100%;
+}
+.imgs{
+  width: 100%;
+  margin-top: 50px;
+}
+.footf{
+  text-align: center;
+  background-color: rgba(199, 198, 198, 0.815);
+  padding-top: 40px;
+}
+.about{
+  margin-left: 50px;
+}
+.ha{
+  color: black;
+  text-decoration: none;
+}
+.asdf{
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
